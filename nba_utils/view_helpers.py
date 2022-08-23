@@ -2,6 +2,7 @@
 view helpers 
 """
 from rest_framework import status
+report = lambda error: f"----------------------------\n{error}\n----------------------------\n"
 
 ##### Functions #####
 def _is_subset(required_fields, request_fields) -> status:
