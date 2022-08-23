@@ -11,7 +11,7 @@ from rest_framework.decorators import api_view
 
 ### Global Constants ###
 n_players = 20
-current_dir = f"{Path(__file__).parent.absolute()}")
+current_dir = f"{Path(__file__).parent.absolute()}"
 
 @api_view(['GET'])
 def fetch_players(request, *args, **kwargs) -> HttpResponse:
